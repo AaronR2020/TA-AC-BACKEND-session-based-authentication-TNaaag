@@ -1,0 +1,10 @@
+page to write and post articles.
+model of articles.
+handle routes and ejs files to see articles [home page | click to see full ].
+..................
+models to add comments
+route to add|delete|update comments using populate().
+ejs to add form to add comments 
+ejs to display comments for respective article using populate
+............................
+personal page to display all posts of a specific user.

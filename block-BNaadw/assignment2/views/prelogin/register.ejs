@@ -1,0 +1,28 @@
+<html>
+<head>
+    <link href="../stylesheets/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sign in</title>
+</head>
+
+<body>
+  <div class="main">
+    <p class="sign" align="center">Register</p>
+    <form action="/users/register" method="post">
+      <%if(error){%> 
+        <%console.log(error);%>
+        <p class="error"><%= error %></p>
+        <%}%>
+      <input class="un" type="text" align="center" placeholder="First Name" name="firstName">
+      <input class="un" type="text" align="center" placeholder="Last Name" name="secondName">
+      <input class="un" type="email" align="center" placeholder="Email" name="email">
+      <input class="pass" type="password" align="center" placeholder="Password" name="password">
+      <input class="pass" type="text" align="center" placeholder="city" name="city">
+      <input type="submit" value="Register" class="submit" align="center">
+    </form>
+      <p class="forgot" align="center"><a href="#">Forgot Password?</p>
+      <p class="forgot" align="center"><a href="/users/login">login</p>
+    </div> 
+</body>
+</html>
